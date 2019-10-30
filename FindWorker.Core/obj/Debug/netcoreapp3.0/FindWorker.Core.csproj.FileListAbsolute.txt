@@ -1,0 +1,15 @@
+C:\Users\Beyda\Desktop\FINDWORK-er\FindWorkerTez\FindWorker.Core\bin\Debug\netcoreapp3.0\FindWorker.Core.deps.json
+C:\Users\Beyda\Desktop\FINDWORK-er\FindWorkerTez\FindWorker.Core\bin\Debug\netcoreapp3.0\FindWorker.Core.dll
+C:\Users\Beyda\Desktop\FINDWORK-er\FindWorkerTez\FindWorker.Core\bin\Debug\netcoreapp3.0\FindWorker.Core.pdb
+C:\Users\Beyda\Desktop\FINDWORK-er\FindWorkerTez\FindWorker.Core\obj\Debug\netcoreapp3.0\FindWorker.Core.AssemblyInfoInputs.cache
+C:\Users\Beyda\Desktop\FINDWORK-er\FindWorkerTez\FindWorker.Core\obj\Debug\netcoreapp3.0\FindWorker.Core.AssemblyInfo.cs
+C:\Users\Beyda\Desktop\FINDWORK-er\FindWorkerTez\FindWorker.Core\obj\Debug\netcoreapp3.0\FindWorker.Core.dll
+C:\Users\Beyda\Desktop\FINDWORK-er\FindWorkerTez\FindWorker.Core\obj\Debug\netcoreapp3.0\FindWorker.Core.pdb
+C:\Users\gizem\Desktop\FindWorkerTez-Beyda\FindWorker.Core\bin\Debug\netcoreapp3.0\FindWorker.Core.deps.json
+C:\Users\gizem\Desktop\FindWorkerTez-Beyda\FindWorker.Core\bin\Debug\netcoreapp3.0\FindWorker.Core.dll
+C:\Users\gizem\Desktop\FindWorkerTez-Beyda\FindWorker.Core\bin\Debug\netcoreapp3.0\FindWorker.Core.pdb
+C:\Users\gizem\Desktop\FindWorkerTez-Beyda\FindWorker.Core\obj\Debug\netcoreapp3.0\FindWorker.Core.csprojAssemblyReference.cache
+C:\Users\gizem\Desktop\FindWorkerTez-Beyda\FindWorker.Core\obj\Debug\netcoreapp3.0\FindWorker.Core.AssemblyInfoInputs.cache
+C:\Users\gizem\Desktop\FindWorkerTez-Beyda\FindWorker.Core\obj\Debug\netcoreapp3.0\FindWorker.Core.AssemblyInfo.cs
+C:\Users\gizem\Desktop\FindWorkerTez-Beyda\FindWorker.Core\obj\Debug\netcoreapp3.0\FindWorker.Core.dll
+C:\Users\gizem\Desktop\FindWorkerTez-Beyda\FindWorker.Core\obj\Debug\netcoreapp3.0\FindWorker.Core.pdb

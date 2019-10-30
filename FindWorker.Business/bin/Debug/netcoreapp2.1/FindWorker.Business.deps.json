@@ -1,0 +1,41 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.1": {
+      "FindWorker.Business/1.0.0": {
+        "dependencies": {
+          "Autofac": "4.9.4"
+        },
+        "runtime": {
+          "FindWorker.Business.dll": {}
+        }
+      },
+      "Autofac/4.9.4": {
+        "runtime": {
+          "lib/netstandard2.0/Autofac.dll": {
+            "assemblyVersion": "4.9.4.0",
+            "fileVersion": "4.9.4.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FindWorker.Business/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Autofac/4.9.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-IwwRbfGHojN5QNLFZ305S8uqxCfy6RXTqZeQ/I+rRXouudhz+D4G+ZZ1MLtjvSjmScpzxmxpl6Ykee/7xn8bhg==",
+      "path": "autofac/4.9.4",
+      "hashPath": "autofac.4.9.4.nupkg.sha512"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+C:\Users\Beyda\Desktop\FINDWORK-er\FindWorkerTez\FindWorker.Business\bin\Release\netcoreapp2.1\FindWorker.Business.deps.json
+C:\Users\Beyda\Desktop\FINDWORK-er\FindWorkerTez\FindWorker.Business\bin\Release\netcoreapp2.1\FindWorker.Business.dll
+C:\Users\Beyda\Desktop\FINDWORK-er\FindWorkerTez\FindWorker.Business\bin\Release\netcoreapp2.1\FindWorker.Business.pdb
+C:\Users\Beyda\Desktop\FINDWORK-er\FindWorkerTez\FindWorker.Business\obj\Release\netcoreapp2.1\FindWorker.Business.csprojAssemblyReference.cache
+C:\Users\Beyda\Desktop\FINDWORK-er\FindWorkerTez\FindWorker.Business\obj\Release\netcoreapp2.1\FindWorker.Business.AssemblyInfoInputs.cache
+C:\Users\Beyda\Desktop\FINDWORK-er\FindWorkerTez\FindWorker.Business\obj\Release\netcoreapp2.1\FindWorker.Business.AssemblyInfo.cs
+C:\Users\Beyda\Desktop\FINDWORK-er\FindWorkerTez\FindWorker.Business\obj\Release\netcoreapp2.1\FindWorker.Business.dll
+C:\Users\Beyda\Desktop\FINDWORK-er\FindWorkerTez\FindWorker.Business\obj\Release\netcoreapp2.1\FindWorker.Business.pdb
