@@ -38,7 +38,7 @@ namespace FindWorker.Api.Controllers
             }
 
         }
-        [HttpPost("")]
+       /* [HttpPost("")]
         public IActionResult UserLogin([FromBody]User entity)
         {
             try
@@ -55,7 +55,7 @@ namespace FindWorker.Api.Controllers
                 return BadRequest(ex.Message);
             }
 
-        }
+        }*/
         [HttpPost("register")]
         public IActionResult Register([FromBody]User entity)
         {

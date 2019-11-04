@@ -8395,11 +8395,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gizem\\Desktop\\FindWorkerTez-Beyda\\FindWorker.Api\\FindWorker.Api.csproj",
+      "projectUniqueName": "C:\\Users\\gizem\\Desktop\\FindWorkerTez\\FindWorker.Api\\FindWorker.Api.csproj",
       "projectName": "FindWorker.Api",
-      "projectPath": "C:\\Users\\gizem\\Desktop\\FindWorkerTez-Beyda\\FindWorker.Api\\FindWorker.Api.csproj",
+      "projectPath": "C:\\Users\\gizem\\Desktop\\FindWorkerTez\\FindWorker.Api\\FindWorker.Api.csproj",
       "packagesPath": "C:\\Users\\gizem\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gizem\\Desktop\\FindWorkerTez-Beyda\\FindWorker.Api\\obj\\",
+      "outputPath": "C:\\Users\\gizem\\Desktop\\FindWorkerTez\\FindWorker.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -8418,8 +8418,8 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "C:\\Users\\gizem\\Desktop\\FindWorkerTez-Beyda\\FindWorker.Data\\FindWorker.Data.csproj": {
-              "projectPath": "C:\\Users\\gizem\\Desktop\\FindWorkerTez-Beyda\\FindWorker.Data\\FindWorker.Data.csproj"
+            "C:\\Users\\gizem\\Desktop\\FindWorkerTez\\FindWorker.Data\\FindWorker.Data.csproj": {
+              "projectPath": "C:\\Users\\gizem\\Desktop\\FindWorkerTez\\FindWorker.Data\\FindWorker.Data.csproj"
             }
           }
         }

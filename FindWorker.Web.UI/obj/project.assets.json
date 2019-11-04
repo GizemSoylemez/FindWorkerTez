@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gizem\\Desktop\\FindWorkerTez-Beyda\\FindWorker.Web.UI\\FindWorker.Web.UI.csproj",
+      "projectUniqueName": "C:\\Users\\gizem\\Desktop\\FindWorkerTez\\FindWorker.Web.UI\\FindWorker.Web.UI.csproj",
       "projectName": "FindWorker.Web.UI",
-      "projectPath": "C:\\Users\\gizem\\Desktop\\FindWorkerTez-Beyda\\FindWorker.Web.UI\\FindWorker.Web.UI.csproj",
+      "projectPath": "C:\\Users\\gizem\\Desktop\\FindWorkerTez\\FindWorker.Web.UI\\FindWorker.Web.UI.csproj",
       "packagesPath": "C:\\Users\\gizem\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gizem\\Desktop\\FindWorkerTez-Beyda\\FindWorker.Web.UI\\obj\\",
+      "outputPath": "C:\\Users\\gizem\\Desktop\\FindWorkerTez\\FindWorker.Web.UI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

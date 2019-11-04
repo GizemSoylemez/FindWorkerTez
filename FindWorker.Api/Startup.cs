@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -52,6 +53,12 @@ namespace Test
             services.AddTransient<ISkillRepository, EfSkillRepository>();
             services.AddTransient<IWorkExperienceRepository, EfWorkExperienceRepository>();
             services.AddTransient<IUnitOfWork, EfUnitOfWork>();
+           
+            
+            /*services.AddIdentity<Role, IdentityRole>()
+                .AddEntityFrameworkStores<FindWorkersTezContext>()
+                .AddDefaultTokenProviders();*/
+
             services.AddAuthentication(
                option => {
                    option.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;

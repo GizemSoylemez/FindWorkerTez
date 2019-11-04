@@ -4869,11 +4869,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gizem\\Desktop\\FindWorkerTez-Beyda\\FindWorker.Entity\\FindWorker.Entity.csproj",
+      "projectUniqueName": "C:\\Users\\gizem\\Desktop\\FindWorkerTez\\FindWorker.Entity\\FindWorker.Entity.csproj",
       "projectName": "FindWorker.Entity",
-      "projectPath": "C:\\Users\\gizem\\Desktop\\FindWorkerTez-Beyda\\FindWorker.Entity\\FindWorker.Entity.csproj",
+      "projectPath": "C:\\Users\\gizem\\Desktop\\FindWorkerTez\\FindWorker.Entity\\FindWorker.Entity.csproj",
       "packagesPath": "C:\\Users\\gizem\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gizem\\Desktop\\FindWorkerTez-Beyda\\FindWorker.Entity\\obj\\",
+      "outputPath": "C:\\Users\\gizem\\Desktop\\FindWorkerTez\\FindWorker.Entity\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
