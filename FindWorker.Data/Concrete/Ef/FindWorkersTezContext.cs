@@ -36,7 +36,7 @@ namespace FindWorker.Entity.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer(@"Data Source=DESKTOP-S1LPS5E\SQLEXPRESS;Database=FindWorkersTez;Trusted_Connection=True;");
+                optionsBuilder.UseSqlServer(@"Server=tcp:findworkersdb.database.windows.net;Database=FindWorkersDB;User ID =adminazure; Password =FindWorker8 ; Trusted_Connection = False;Encrypt = True; ");
             }
         }
 

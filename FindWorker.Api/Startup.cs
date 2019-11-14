@@ -75,8 +75,8 @@ namespace Test
                    {
                        ValidateIssuer = true,
                        ValidateAudience = true,
-                       ValidAudience = "http://cbank.com",
-                       ValidIssuer = "http://cbank.com",
+                       ValidAudience = "https://localhost:44377/",
+                       ValidIssuer = "https://localhost:44377/",
                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("MySuperSecureKey"))
                    };
                }

@@ -20,7 +20,25 @@ namespace FindWorker.Api.Controllers
         {
             uow = new EfUnitOfWork(new FindWorkersTezContext());
         }
-        [HttpPost]
+
+        [HttpGet]
+        public IActionResult GetUser()
+        {
+            try
+            {
+                var result = uow.Users.GetAll()?.ToList();
+                if (result != null)
+                    return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+
+            }
+            return BadRequest("Error");
+        }
+
+        /*[HttpPost]
         public IActionResult AddUser(User entity)
         {
             var id = Request.Headers["id"];
@@ -37,7 +55,7 @@ namespace FindWorker.Api.Controllers
                 return BadRequest("Bilinmeyen bir hata meydana geldi.");
             }
 
-        }
+        }*/
        /* [HttpPost("")]
         public IActionResult UserLogin([FromBody]User entity)
         {
@@ -82,26 +100,7 @@ namespace FindWorker.Api.Controllers
                 return BadRequest(ex.Message);
             }
         }
-        [HttpGet("get")]
-        public IActionResult GetUser()
-        {
-            //var id=Request.Headers["userId"];
-            try
-            {
-                var result = uow.Users.GetAll()?.ToList();
-                if (result != null)
-                    return Ok(result);
-
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
-            return BadRequest("Error");
-        }
-
-
-
+        
         [HttpPut("")]
         public IActionResult UpdateUser([FromBody]User entity)
         {
@@ -125,12 +124,12 @@ namespace FindWorker.Api.Controllers
         }
 
         [HttpGet("delete")]
-        public IActionResult DeleteUser([FromBody] int Id)
+        public IActionResult DeleteUser()
         {
-            // var id = Request.Headers["id"];
             try
             {
-                var user = uow.Users.Get(Convert.ToInt32(Id));
+                var id = Request.Headers["id"];
+                var user = uow.Users.Get(Convert.ToInt32(id));
                 uow.Users.Delete(user);
                 uow.SaveChanges();
                 return Ok("ok");

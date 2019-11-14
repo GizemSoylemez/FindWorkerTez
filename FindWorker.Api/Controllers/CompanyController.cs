@@ -40,7 +40,7 @@ namespace FindWorker.Api.Controllers
              return BadRequest("Error");
          }
 
-         [HttpPost("")]
+         /*[HttpPost("")]
          public IActionResult AddCompany(Company entity)
          {
             var result = Request.Headers["RoleId"];
@@ -50,7 +50,7 @@ namespace FindWorker.Api.Controllers
              uow.Companies.Post(entity);
              uow.SaveChanges();
              return Ok("ok");
-         }
+         }*/
 
          [HttpPost("Register")]
          //[Route("Register")]
@@ -94,7 +94,7 @@ namespace FindWorker.Api.Controllers
              return Ok("ok");
          }
 
-        [HttpPost]
+        /*[HttpPost]
         [Route("login")]
         public IActionResult CompanyLogin([FromBody]Company entity)
         {
@@ -112,7 +112,7 @@ namespace FindWorker.Api.Controllers
                 return BadRequest(ex.Message);
             }
 
-        }
+        }*/
         /*[HttpGet("Delete")]
         public bool RemoveCompany(int id)
         {
