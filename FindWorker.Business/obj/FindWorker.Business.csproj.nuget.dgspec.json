@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gizem\\Desktop\\FindWorkerTez\\FindWorker.Business\\FindWorker.Business.csproj": {}
+    "C:\\Users\\gizem\\Desktop\\tezcode\\FindWorkerTez\\FindWorker.Business\\FindWorker.Business.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gizem\\Desktop\\FindWorkerTez\\FindWorker.Business\\FindWorker.Business.csproj": {
+    "C:\\Users\\gizem\\Desktop\\tezcode\\FindWorkerTez\\FindWorker.Business\\FindWorker.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gizem\\Desktop\\FindWorkerTez\\FindWorker.Business\\FindWorker.Business.csproj",
+        "projectUniqueName": "C:\\Users\\gizem\\Desktop\\tezcode\\FindWorkerTez\\FindWorker.Business\\FindWorker.Business.csproj",
         "projectName": "FindWorker.Business",
-        "projectPath": "C:\\Users\\gizem\\Desktop\\FindWorkerTez\\FindWorker.Business\\FindWorker.Business.csproj",
+        "projectPath": "C:\\Users\\gizem\\Desktop\\tezcode\\FindWorkerTez\\FindWorker.Business\\FindWorker.Business.csproj",
         "packagesPath": "C:\\Users\\gizem\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gizem\\Desktop\\FindWorkerTez\\FindWorker.Business\\obj\\",
+        "outputPath": "C:\\Users\\gizem\\Desktop\\tezcode\\FindWorkerTez\\FindWorker.Business\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

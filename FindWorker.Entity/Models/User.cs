@@ -27,6 +27,7 @@ namespace FindWorker.Entity.Models
         public List<Reference> References { get; set; }
         public List<Skill> Skills { get; set; }
         public List<WorkExperience> WorkExperiences { get; set; }
+        public List<Location> Location { get; set; }
 
         public int RoleId { get; set; }
         public Role Role { get; set; }

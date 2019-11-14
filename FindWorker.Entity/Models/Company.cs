@@ -15,6 +15,7 @@ namespace FindWorker.Entity.Models
         public int? LastModifiedUser { get; set; }
 
         public List<Advert> Adverts { get; set; }
+        public List<Message> Messages { get; set; }
 
         public int RoleId { get; set; }
         public Role role { get; set; }
