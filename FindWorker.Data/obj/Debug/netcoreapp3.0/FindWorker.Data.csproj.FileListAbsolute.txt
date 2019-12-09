@@ -31,3 +31,14 @@ C:\Users\gizem\Desktop\FindWorkerTez\FindWorker.Data\obj\Debug\netcoreapp3.0\Fin
 C:\Users\gizem\Desktop\FindWorkerTez\FindWorker.Data\obj\Debug\netcoreapp3.0\FindWorker.Data.csproj.CopyComplete
 C:\Users\gizem\Desktop\FindWorkerTez\FindWorker.Data\obj\Debug\netcoreapp3.0\FindWorker.Data.dll
 C:\Users\gizem\Desktop\FindWorkerTez\FindWorker.Data\obj\Debug\netcoreapp3.0\FindWorker.Data.pdb
+C:\Users\gizem\Desktop\tezcode\FindWorkerTez\FindWorker.Data\bin\Debug\netcoreapp3.0\FindWorker.Data.deps.json
+C:\Users\gizem\Desktop\tezcode\FindWorkerTez\FindWorker.Data\bin\Debug\netcoreapp3.0\FindWorker.Data.dll
+C:\Users\gizem\Desktop\tezcode\FindWorkerTez\FindWorker.Data\bin\Debug\netcoreapp3.0\FindWorker.Data.pdb
+C:\Users\gizem\Desktop\tezcode\FindWorkerTez\FindWorker.Data\bin\Debug\netcoreapp3.0\FindWorker.Entity.dll
+C:\Users\gizem\Desktop\tezcode\FindWorkerTez\FindWorker.Data\bin\Debug\netcoreapp3.0\FindWorker.Entity.pdb
+C:\Users\gizem\Desktop\tezcode\FindWorkerTez\FindWorker.Data\obj\Debug\netcoreapp3.0\FindWorker.Data.csprojAssemblyReference.cache
+C:\Users\gizem\Desktop\tezcode\FindWorkerTez\FindWorker.Data\obj\Debug\netcoreapp3.0\FindWorker.Data.AssemblyInfoInputs.cache
+C:\Users\gizem\Desktop\tezcode\FindWorkerTez\FindWorker.Data\obj\Debug\netcoreapp3.0\FindWorker.Data.AssemblyInfo.cs
+C:\Users\gizem\Desktop\tezcode\FindWorkerTez\FindWorker.Data\obj\Debug\netcoreapp3.0\FindWorker.Data.csproj.CopyComplete
+C:\Users\gizem\Desktop\tezcode\FindWorkerTez\FindWorker.Data\obj\Debug\netcoreapp3.0\FindWorker.Data.dll
+C:\Users\gizem\Desktop\tezcode\FindWorkerTez\FindWorker.Data\obj\Debug\netcoreapp3.0\FindWorker.Data.pdb

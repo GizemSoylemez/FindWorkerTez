@@ -6,11 +6,14 @@ using System.Threading.Tasks;
 using FindWorker.Data.Abstract;
 using FindWorker.Data.Concrete.Ef;
 using FindWorker.Entity.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FindWorker.Api.Controllers
 {
+   
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class CompanyController : ControllerBase
@@ -39,41 +42,30 @@ namespace FindWorker.Api.Controllers
              }
              return BadRequest("Error");
          }
+        [Route("GetLoginUser")]
+        [HttpGet]
+        public IActionResult GetLoginUser()
+        {
+            var email = User.Claims.FirstOrDefault().Value;
+            return Ok(uow.Companies.Find(x => x.CompanyEmail == email).FirstOrDefault());
+        }
+        
 
-         /*[HttpPost("")]
-         public IActionResult AddCompany(Company entity)
-         {
-            var result = Request.Headers["RoleId"];
-            
-             var rol = uow.Roles.Get(Convert.ToInt32(result));
-             entity.role = rol;
-             uow.Companies.Post(entity);
-             uow.SaveChanges();
-             return Ok("ok");
-         }*/
+        /*[HttpPost("")]
+        public IActionResult AddCompany(Company entity)
+        {
+           var result = Request.Headers["RoleId"];
 
-         [HttpPost("Register")]
-         //[Route("Register")]
-         public IActionResult Register([FromBody]Company entity)
-         {
-             var result = uow.Companies.Find(i => i.CompanyEmail == entity.CompanyEmail).FirstOrDefault();
-             if (result != null)
-             {
-                 return Ok("ok");
-             }
-             else
-             {
-                 entity.CreationDate = DateTime.Now;
-                 var rol = uow.Roles.Find(i => i.RoleId == 2).FirstOrDefault();
-                 entity.role = rol;
+            var rol = uow.Roles.Get(Convert.ToInt32(result));
+            entity.role = rol;
+            uow.Companies.Post(entity);
+            uow.SaveChanges();
+            return Ok("ok");
+        }*/
 
-                 uow.Companies.Post(entity);
-                 uow.SaveChanges();
-                 return Ok("ok");
-             }
-         }
 
-         [HttpPut("")]
+
+        [HttpPut("")]
          public IActionResult UpdateCompany([FromBody] Company entity)
          {
              entity.role = uow.Roles.Get(entity.RoleId);

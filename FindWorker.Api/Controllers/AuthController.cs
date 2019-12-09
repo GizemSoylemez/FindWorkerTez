@@ -13,6 +13,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
+using Test;
 
 namespace FindWorker.Api.Controllers
 {
@@ -30,7 +31,7 @@ namespace FindWorker.Api.Controllers
         [Route("UserLogin")]
         public IActionResult UserLogin([FromBody] Login model )
         {
-            var result = uow.Users.Find(i => i.Email == model.Email && i.Password == model.Password);
+            var result = uow.Users.Find(i => i.Email == model.Email && i.Password == model.Password && i.RoleId==1).FirstOrDefault();
             if(result !=null)
             {
                 var claims = new[]
@@ -42,8 +43,8 @@ namespace FindWorker.Api.Controllers
                 var signingKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("MySuperSecureKey"));
 
                 var token = new JwtSecurityToken(
-                    issuer: "http://localhost44377.com",
-                    audience: "http://localhost44377.com",
+                    issuer: "http://cbank.com",
+                    audience: "http://cbank.com",
                     expires: DateTime.UtcNow.AddHours(1),
                     claims: claims,
                     signingCredentials: new Microsoft.IdentityModel.Tokens.SigningCredentials(signingKey, SecurityAlgorithms.HmacSha256)
@@ -61,13 +62,13 @@ namespace FindWorker.Api.Controllers
             return Unauthorized();
         }
 
-
+        
 
         [HttpPost]
         [Route("CompanyLogin")]
         public IActionResult CompanyLogin([FromBody] Login model)
         {
-            var result = uow.Companies.Find(i => i.CompanyEmail == model.Email && i.Password == model.Password);
+            var result = uow.Companies.Find(i => i.CompanyEmail == model.Email && i.Password == model.Password && i.RoleId==2).FirstOrDefault();
             if (result != null)
             {
                 var claims = new[]
@@ -79,8 +80,8 @@ namespace FindWorker.Api.Controllers
                 var signingKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("MySuperSecureKey"));
 
                 var token = new JwtSecurityToken(
-                    issuer: "http://localhost44377.com",
-                    audience: "http://localhost44377.com",
+                    issuer: "http://cbank.com",
+                    audience: "http://cbank.com",
                     expires: DateTime.UtcNow.AddHours(1),
                     claims: claims,
                     signingCredentials: new Microsoft.IdentityModel.Tokens.SigningCredentials(signingKey, SecurityAlgorithms.HmacSha256)

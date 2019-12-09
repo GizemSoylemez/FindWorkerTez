@@ -13,6 +13,7 @@ namespace FindWorker.Entity.Models
         public string PhoneNumber { get; set; }
         public string Email { get; set; }
         public string ProfilePhoto { get; set; }
+        public bool? MilitaryStatus { get; set; }
         public DateTime? CreationDate { get; set; }
         public int? CreationUser { get; set; }
         public DateTime? LastModifiedDate { get; set; }

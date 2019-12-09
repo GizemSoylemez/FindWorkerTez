@@ -53,35 +53,35 @@ namespace Test
             services.AddTransient<ISkillRepository, EfSkillRepository>();
             services.AddTransient<IWorkExperienceRepository, EfWorkExperienceRepository>();
             services.AddTransient<IUnitOfWork, EfUnitOfWork>();
-           
-            
+
+
             /*services.AddIdentity<Role, IdentityRole>()
                 .AddEntityFrameworkStores<FindWorkersTezContext>()
                 .AddDefaultTokenProviders();*/
 
             services.AddAuthentication(
-               option => {
-                   option.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-                   option.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-                   option.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
-               }
-               )
-               .AddJwtBearer(
-               option =>
-               {
-                   option.SaveToken = true;
-                   option.RequireHttpsMetadata = false;
-                   option.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters()
-                   {
-                       ValidateIssuer = true,
-                       ValidateAudience = true,
-                       ValidAudience = "https://localhost:44377/",
-                       ValidIssuer = "https://localhost:44377/",
-                       IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("MySuperSecureKey"))
-                   };
-               }
-               );
-               services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
+                option => {
+                    option.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                    option.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+                    option.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+                }
+                )
+                .AddJwtBearer(
+                option =>
+                {
+                    option.SaveToken = true;
+                    option.RequireHttpsMetadata = false;
+                    option.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters()
+                    {
+                        ValidateIssuer = true,
+                        ValidateAudience = true,
+                        ValidAudience = "http://cbank.com",
+                        ValidIssuer = "http://cbank.com",
+                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("MySuperSecureKey"))
+                    };
+                }
+                );
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
 
 
         }
@@ -97,7 +97,7 @@ namespace Test
             app.UseHttpsRedirection();
 
             app.UseRouting();
-
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

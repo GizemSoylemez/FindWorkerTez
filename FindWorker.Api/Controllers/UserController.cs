@@ -5,11 +5,13 @@ using System.Threading.Tasks;
 using FindWorker.Data.Abstract;
 using FindWorker.Data.Concrete.Ef;
 using FindWorker.Entity.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FindWorker.Api.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class UserController : ControllerBase
@@ -38,6 +40,15 @@ namespace FindWorker.Api.Controllers
             return BadRequest("Error");
         }
 
+        [Route("GetLoginUser")]
+        [HttpGet]
+        public IActionResult GetLoginUser()
+        {
+            var email = User.Claims.FirstOrDefault().Value;
+            return Ok(uow.Users.Find(x => x.Email == email).FirstOrDefault());
+        }
+
+       
         /*[HttpPost]
         public IActionResult AddUser(User entity)
         {
@@ -56,51 +67,25 @@ namespace FindWorker.Api.Controllers
             }
 
         }*/
-       /* [HttpPost("")]
-        public IActionResult UserLogin([FromBody]User entity)
-        {
-            try
-            {
-                var result = uow.Users.Find(i => i.Password == entity.Password && i.Email == entity.Email).FirstOrDefault();
-                if (result != null)
-                    return Ok("ok");
-                else
-                    return BadRequest("error");
-            }
+        /* [HttpPost("")]
+         public IActionResult UserLogin([FromBody]User entity)
+         {
+             try
+             {
+                 var result = uow.Users.Find(i => i.Password == entity.Password && i.Email == entity.Email).FirstOrDefault();
+                 if (result != null)
+                     return Ok("ok");
+                 else
+                     return BadRequest("error");
+             }
 
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
+             catch (Exception ex)
+             {
+                 return BadRequest(ex.Message);
+             }
 
-        }*/
-        [HttpPost("register")]
-        public IActionResult Register([FromBody]User entity)
-        {
-            try
-            {
-                var result = uow.Users.Find(i => i.Email == entity.Email).FirstOrDefault();
-                if (result != null)
-                {
-                    return BadRequest("error");
-                }
-                else
-                {
-                    entity.CreationDate = DateTime.Now;
-                    var rol = uow.Roles.Find(i => i.RoleId == 1).FirstOrDefault();
-                    entity.Role = rol;
+         }*/
 
-                    uow.Users.Post(entity);
-                    uow.SaveChanges();
-                    return Ok("OK");
-                }
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
-        }
-        
         [HttpPut("")]
         public IActionResult UpdateUser([FromBody]User entity)
         {
