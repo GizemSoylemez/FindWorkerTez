@@ -40,10 +40,17 @@ namespace FindWorker.Api.Controllers
         [HttpPost]
        public IActionResult AddCv(Cvdata entity)
         {
+            try
+            {
+                uow.CvDatas.Post(entity);
+                uow.SaveChanges();
+                return Ok("ok");
+            }
+            catch (Exception ex)
+            {
+                return Ok(ex.Message);
+            }
             
-            uow.CvDatas.Post(entity);
-            uow.SaveChanges();
-            return Ok("ok");
         }
 
         [HttpPut]
