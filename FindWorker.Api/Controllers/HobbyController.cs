@@ -19,7 +19,7 @@ namespace FindWorker.Api.Controllers
         {
             uow = new EfUnitOfWork(new FindWorkersTezContext());
         }
-        [HttpPost]
+        [HttpPost("AddHobby")]
         public IActionResult AddHobby([FromBody]Hobby entity)
         {
             // var id = Request.Headers["id"];

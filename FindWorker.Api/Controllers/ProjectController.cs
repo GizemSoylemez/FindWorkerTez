@@ -19,7 +19,7 @@ namespace FindWorker.Api.Controllers
         {
             uow = new EfUnitOfWork(new FindWorkersTezContext());
         }
-        [HttpPost]
+        [HttpPost("AddProject")]
         public IActionResult AddProject([FromBody]Project entity)
         {
             // var id = Request.Headers["id"];

@@ -19,7 +19,7 @@ namespace FindWorker.Api.Controllers
         {
             uow = new EfUnitOfWork(new FindWorkersTezContext());
         }
-        [HttpPost]
+        [HttpPost("AddSkill")]
         public IActionResult AddSkill([FromBody]Skill entity)
         {
             // var id = Request.Headers["id"];

@@ -37,7 +37,7 @@ namespace FindWorker.Api.Controllers
             return BadRequest("Error");
         }
 
-        [HttpPost]
+        [HttpPost("AddReference")]
         public IActionResult AddReference([FromBody] Reference entity)
         {
             uow.References.Post(entity);

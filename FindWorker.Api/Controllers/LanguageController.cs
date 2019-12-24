@@ -19,7 +19,7 @@ namespace FindWorker.Api.Controllers
         {
             uow = new EfUnitOfWork(new FindWorkersTezContext());
         }
-        [HttpPost]
+        [HttpPost("AddLanguage")]
         public IActionResult AddLanguage([FromBody]Language entity)
         {
             // var id = Request.Headers["id"];

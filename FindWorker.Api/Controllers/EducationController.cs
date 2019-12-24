@@ -38,8 +38,8 @@ namespace FindWorker.Api.Controllers
             return BadRequest("error");
         }
 
-        [HttpPost]
-        public IActionResult AddEducattion([FromBody] Education entity)
+        [HttpPost("AddEducation")]
+        public IActionResult AddEducation([FromBody] Education entity)
         {
             uow.Educations.Post(entity);
             uow.SaveChanges();

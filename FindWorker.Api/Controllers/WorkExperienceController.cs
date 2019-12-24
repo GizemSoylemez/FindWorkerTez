@@ -36,7 +36,7 @@ namespace FindWorker.Api.Controllers
             return BadRequest("error");
         }
 
-        [HttpPost]
+        [HttpPost("AddWorkExperience")]
         public IActionResult AddWorkExperience([FromBody] WorkExperience entity)
         {
             uow.WorkExperiences.Post(entity);

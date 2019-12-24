@@ -221,7 +221,7 @@
   },
   "libraries": {
     "Autofac/4.9.4": {
-      "sha512": "IwwRbfGHojN5QNLFZ305S8uqxCfy6RXTqZeQ/I+rRXouudhz+D4G+ZZ1MLtjvSjmScpzxmxpl6Ykee/7xn8bhg==",
+      "sha512": "dYiDG4yoV7GDCoOc66d1sqMmg2gwDyomHKgATuMfhFzYxVpWEltToHVHXI3I9vOEvIXE55S4OZPY0ldiZmZtpA==",
       "type": "package",
       "path": "autofac/4.9.4",
       "files": [
@@ -718,29 +718,34 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\gizem\\.nuget\\packages\\": {},
+    "C:\\Users\\Alican\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gizem\\Desktop\\tezcode\\FindWorkerTez\\FindWorker.Business\\FindWorker.Business.csproj",
+      "projectUniqueName": "C:\\Users\\Alican\\Desktop\\Api\\FindWorkerTez\\FindWorker.Business\\FindWorker.Business.csproj",
       "projectName": "FindWorker.Business",
-      "projectPath": "C:\\Users\\gizem\\Desktop\\tezcode\\FindWorkerTez\\FindWorker.Business\\FindWorker.Business.csproj",
-      "packagesPath": "C:\\Users\\gizem\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gizem\\Desktop\\tezcode\\FindWorkerTez\\FindWorker.Business\\obj\\",
+      "projectPath": "C:\\Users\\Alican\\Desktop\\Api\\FindWorkerTez\\FindWorker.Business\\FindWorker.Business.csproj",
+      "packagesPath": "C:\\Users\\Alican\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Alican\\Desktop\\Api\\FindWorkerTez\\FindWorker.Business\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\gizem\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Alican\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.1.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\DevExpress 19.1\\Components\\System\\Components\\Packages": {},
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
