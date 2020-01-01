@@ -7,7 +7,7 @@ namespace FindWorker.Entity.Models
     {
         public int Id { get; set; }
         public string DocumentationName { get; set; }
-        public DateTime? DocumentDate { get; set; }
+        public int DocumentDate { get; set; }
         public DateTime? CreationDate { get; set; }
         public int? CreationUser { get; set; }
         public DateTime? LastModifiedDate { get; set; }

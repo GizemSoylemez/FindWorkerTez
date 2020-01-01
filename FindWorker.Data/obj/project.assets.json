@@ -1352,7 +1352,7 @@
       ]
     },
     "Microsoft.EntityFrameworkCore/3.0.0": {
-      "sha512": "XmqAie+psISjr2rakUIs3sblL6mSLTCzSRmW2oUiUrLjAOiLvkoF8KbS5YMpQCnv5NJN3G2AqgmcSZijly1iQg==",
+      "sha512": "3uFaX5x+HIzL4bodY10Qy00g6+G0OwtJQybgOvAqF6KHAuTZ2SPJk7AxawhrMcDQZ8DZ8S+4sSZIt9QmEjojVw==",
       "type": "package",
       "path": "microsoft.entityframeworkcore/3.0.0",
       "files": [
@@ -1403,7 +1403,7 @@
       ]
     },
     "Microsoft.EntityFrameworkCore.SqlServer/3.0.0": {
-      "sha512": "Qe1PzL0fVfEildvCQjWx0gXDFfD5e5LT9/Cwg0N86/6eX44FhUowdfI2FMElVdHjU80l67KhDfVmBYCEiPJ/Pw==",
+      "sha512": "n7knuh81xAGDlIOCqUAW2dTgvr0eKAbbKf4KMfDdGTzImbQtiTQxvwThmMj1Bek3251+MwLSmmK4rhjWx7Xmyw==",
       "type": "package",
       "path": "microsoft.entityframeworkcore.sqlserver/3.0.0",
       "files": [
@@ -1919,7 +1919,7 @@
       ]
     },
     "System.Collections.NonGeneric/4.3.0": {
-      "sha512": "LE/oChpRvkSi3U25u0KnJcI44JeDZ1QJCyN4qFDx2uusEypdqR24w7lKYw21eYe5esuCBuc862wRmpF63Yy1KQ==",
+      "sha512": "prtjIEMhGUnQq6RnPEYLpFt8AtLbp9yq2zxOSrY7KJJZrw25Fi97IzBqY7iqssbM61Ek5b8f3MG/sG1N2sN5KA==",
       "type": "package",
       "path": "system.collections.nongeneric/4.3.0",
       "files": [
@@ -2232,7 +2232,7 @@
       ]
     },
     "System.Configuration.ConfigurationManager/4.5.0": {
-      "sha512": "UIFvaFfuKhLr9u5tWMxmVoDPkFeD+Qv8gUuap4aZgVGYSYMdERck4OhLN/2gulAc0nYTEigWXSJNNWshrmxnng==",
+      "sha512": "+2SYYKwbN0n+9SrBanflZdaVleFkytEfTNzOu+f3SK0vROMMrorpw1UJyHJQ1ZooughRxPmLj8Fh5N2tSe7sdA==",
       "type": "package",
       "path": "system.configuration.configurationmanager/4.5.0",
       "files": [
@@ -3971,7 +3971,7 @@
       ]
     },
     "System.Security.Cryptography.ProtectedData/4.5.0": {
-      "sha512": "wLBKzFnDCxP12VL9ANydSYhk59fC4cvOr9ypYQLPnAj48NQIhqnjdD2yhP8yEKyBJEjERWS9DisKL7rX5eU25Q==",
+      "sha512": "s/MFK8BvgtejZj5a8qAPDXEGBtWkpFX98qwQP/wqVa9CgIC7LrKHxDFdlN5x6afGAb0ZVBVGIZlCdBLnO2QjZw==",
       "type": "package",
       "path": "system.security.cryptography.protecteddata/4.5.0",
       "files": [
@@ -4814,42 +4814,37 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Alican\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Users\\gizem\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alican\\Desktop\\Api\\FindWorkerTez\\FindWorker.Data\\FindWorker.Data.csproj",
+      "projectUniqueName": "C:\\Users\\gizem\\Desktop\\Api\\FindWorkerTez\\FindWorker.Data\\FindWorker.Data.csproj",
       "projectName": "FindWorker.Data",
-      "projectPath": "C:\\Users\\Alican\\Desktop\\Api\\FindWorkerTez\\FindWorker.Data\\FindWorker.Data.csproj",
-      "packagesPath": "C:\\Users\\Alican\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Alican\\Desktop\\Api\\FindWorkerTez\\FindWorker.Data\\obj\\",
+      "projectPath": "C:\\Users\\gizem\\Desktop\\Api\\FindWorkerTez\\FindWorker.Data\\FindWorker.Data.csproj",
+      "packagesPath": "C:\\Users\\gizem\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\gizem\\Desktop\\Api\\FindWorkerTez\\FindWorker.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Alican\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.1.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\gizem\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\DevExpress 19.1\\Components\\System\\Components\\Packages": {},
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "C:\\Users\\Alican\\Desktop\\Api\\FindWorkerTez\\FindWorker.Entity\\FindWorker.Entity.csproj": {
-              "projectPath": "C:\\Users\\Alican\\Desktop\\Api\\FindWorkerTez\\FindWorker.Entity\\FindWorker.Entity.csproj"
+            "C:\\Users\\gizem\\Desktop\\Api\\FindWorkerTez\\FindWorker.Entity\\FindWorker.Entity.csproj": {
+              "projectPath": "C:\\Users\\gizem\\Desktop\\Api\\FindWorkerTez\\FindWorker.Entity\\FindWorker.Entity.csproj"
             }
           }
         }

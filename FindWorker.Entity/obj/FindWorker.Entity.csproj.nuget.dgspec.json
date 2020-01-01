@@ -1,33 +1,29 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Alican\\Desktop\\Api\\FindWorkerTez\\FindWorker.Entity\\FindWorker.Entity.csproj": {}
+    "C:\\Users\\gizem\\Desktop\\Api\\FindWorkerTez\\FindWorker.Entity\\FindWorker.Entity.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alican\\Desktop\\Api\\FindWorkerTez\\FindWorker.Entity\\FindWorker.Entity.csproj": {
+    "C:\\Users\\gizem\\Desktop\\Api\\FindWorkerTez\\FindWorker.Entity\\FindWorker.Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alican\\Desktop\\Api\\FindWorkerTez\\FindWorker.Entity\\FindWorker.Entity.csproj",
+        "projectUniqueName": "C:\\Users\\gizem\\Desktop\\Api\\FindWorkerTez\\FindWorker.Entity\\FindWorker.Entity.csproj",
         "projectName": "FindWorker.Entity",
-        "projectPath": "C:\\Users\\Alican\\Desktop\\Api\\FindWorkerTez\\FindWorker.Entity\\FindWorker.Entity.csproj",
-        "packagesPath": "C:\\Users\\Alican\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alican\\Desktop\\Api\\FindWorkerTez\\FindWorker.Entity\\obj\\",
+        "projectPath": "C:\\Users\\gizem\\Desktop\\Api\\FindWorkerTez\\FindWorker.Entity\\FindWorker.Entity.csproj",
+        "packagesPath": "C:\\Users\\gizem\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gizem\\Desktop\\Api\\FindWorkerTez\\FindWorker.Entity\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Alican\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.1.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\gizem\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\DevExpress 19.1\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },

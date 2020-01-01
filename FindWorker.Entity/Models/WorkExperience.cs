@@ -8,7 +8,8 @@ namespace FindWorker.Entity.Models
         public int Id { get; set; }
         public string CompanyName { get; set; }
         public string Position { get; set; }
-        public DateTime? WorkedTime { get; set; }
+        public int WorkStartTime { get; set; }
+        public int WorkFinishTime { get; set; }
         public string Description { get; set; }
         public DateTime? CreationDate { get; set; }
         public int? CreationUser { get; set; }
