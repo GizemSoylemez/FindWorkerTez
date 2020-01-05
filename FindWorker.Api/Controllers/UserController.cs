@@ -133,13 +133,27 @@ namespace FindWorker.Api.Controllers
         {
             var email = User.Claims.FirstOrDefault().Value;
             var usr = uow.Users.Find(i=>i.Email==email).FirstOrDefault();
+            Cv cv = new Cv();
 
             User user = new User();
             try
             {
-                var contact = uow.Contacts.Find(i => i.UserId == usr.Id).ToList();
-                return Ok(contact);
+                
+                cv.Contact = uow.Contacts.Find(i => i.UserId == usr.Id).ToList();
+                cv.CvData = uow.CvDatas.Find(i => i.UserId == usr.Id).ToList();
+                cv.Document = uow.Documents.Find(i => i.UserId == usr.Id).ToList();
+                cv.Education = uow.Educations.Find(i => i.UserId == usr.Id).ToList();
+                cv.Hobby = uow.Hobbies.Find(i => i.UserId == usr.Id).ToList();
+                cv.Language = uow.Languages.Find(i => i.UserId == usr.Id).ToList();
+                cv.Location = uow.Locations.Find(i => i.UserId == usr.Id).ToList();
+                cv.Project = uow.Projects.Find(i => i.UserId == usr.Id).ToList();
+                cv.Reference = uow.References.Find(i => i.UserId == usr.Id).ToList();
+                cv.Skill = uow.Skills.Find(i => i.UserId == usr.Id).ToList();
+                cv.WorkExperience = uow.WorkExperiences.Find(i => i.UserId == usr.Id).ToList();
+                return Ok(cv);
+
             }
+
 
             catch (Exception ex)
             {
