@@ -126,5 +126,25 @@ namespace FindWorker.Api.Controllers
                 return BadRequest(ex.Message);
             }
         }
+
+
+        [HttpGet("GetUserInfo")]
+        public IActionResult GetUserInfo()
+        {
+            var email = User.Claims.FirstOrDefault().Value;
+            var usr = uow.Users.Find(i=>i.Email==email).FirstOrDefault();
+
+            User user = new User();
+            try
+            {
+                var contact = uow.Contacts.Find(i => i.UserId == usr.Id).ToList();
+                return Ok(contact);
+            }
+
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
     }
 }

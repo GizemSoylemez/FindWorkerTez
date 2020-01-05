@@ -96,7 +96,7 @@ namespace FindWorker.Entity.Models
             {
                 entity.Property(e => e.CreationDate).HasColumnType("datetime");
 
-                entity.Property(e => e.DocumentDate).HasColumnType("datetime");
+               // entity.Property(e => e.DocumentDate).HasMaxLength(10);
 
                 entity.Property(e => e.DocumentationName).HasMaxLength(75);
 
@@ -235,7 +235,8 @@ namespace FindWorker.Entity.Models
 
                 entity.Property(e => e.Position).HasMaxLength(75);
 
-                entity.Property(e => e.WorkedTime).HasColumnType("datetime");
+                entity.Property(e => e.WorkFinishTime).HasMaxLength(10);
+                entity.Property(e => e.WorkStartTime).HasMaxLength(10);
             });
         }
     }

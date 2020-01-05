@@ -19,17 +19,17 @@ namespace FindWorker.Entity.Models
         public DateTime? LastModifiedDate { get; set; }
         public int? LastModifiedUser { get; set; }
 
-        public List<Contact> Contacts { get; set; }
-        public List<Document> Documents { get; set; }
-        public List<Education> Educations { get; set; }
-        public List<Hobby> Hobbies { get; set; }
-        public List<Language> Languages { get; set; }
-        public List<Project> Projects { get; set; }
-        public List<Reference> References { get; set; }
-        public List<Skill> Skills { get; set; }
-        public List<WorkExperience> WorkExperiences { get; set; }
-        public List<Location> Location { get; set; }
-        public List<Cvdata> Cvdata { get; set; }
+        //public List<Contact> Contacts { get; set; }
+        //public List<Document> Documents { get; set; }
+        //public List<Education> Educations { get; set; }
+        //public List<Hobby> Hobbies { get; set; }
+        //public List<Language> Languages { get; set; }
+        //public List<Project> Projects { get; set; }
+        //public List<Reference> References { get; set; }
+        //public List<Skill> Skills { get; set; }
+        //public List<WorkExperience> WorkExperiences { get; set; }
+        //public List<Location> Location { get; set; }
+        //public List<Cvdata> Cvdata { get; set; }
 
         public int RoleId { get; set; }
         public Role Role { get; set; }

@@ -35,6 +35,7 @@ namespace Test
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
             services.AddDbContext<FindWorkersTezContext>(Options => Options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddTransient<IUserRepository, EfUserRepository>();
             services.AddTransient<IAdvertRepository, EfAdvertRepository>();
