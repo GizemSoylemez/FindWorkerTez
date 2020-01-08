@@ -138,7 +138,7 @@ namespace FindWorker.Api.Controllers
             User user = new User();
             try
             {
-                
+
                 cv.Contact = uow.Contacts.Find(i => i.UserId == usr.Id).ToList();
                 cv.CvData = uow.CvDatas.Find(i => i.UserId == usr.Id).ToList();
                 cv.Document = uow.Documents.Find(i => i.UserId == usr.Id).ToList();
@@ -149,7 +149,7 @@ namespace FindWorker.Api.Controllers
                 cv.Project = uow.Projects.Find(i => i.UserId == usr.Id).ToList();
                 cv.Reference = uow.References.Find(i => i.UserId == usr.Id).ToList();
                 cv.Skill = uow.Skills.Find(i => i.UserId == usr.Id).ToList();
-                cv.WorkExperience = uow.WorkExperiences.Find(i => i.UserId == usr.Id).ToList();
+                //cv.WorkExperience = uow.WorkExperiences.Find(i => i.UserId == usr.Id).ToList();
                 return Ok(cv);
 
             }
