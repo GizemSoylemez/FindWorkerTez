@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace FindWorker.Entity.Models
 {
@@ -18,6 +20,8 @@ namespace FindWorker.Entity.Models
         public int? CreationUser { get; set; }
         public DateTime? LastModifiedDate { get; set; }
         public int? LastModifiedUser { get; set; }
+        [NotMapped]
+        public IFormFile Photo { get; set; }
 
         //public List<Contact> Contacts { get; set; }
         //public List<Document> Documents { get; set; }

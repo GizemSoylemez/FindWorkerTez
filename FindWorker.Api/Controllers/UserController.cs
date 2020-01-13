@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using FindWorker.Data.Abstract;
 using FindWorker.Data.Concrete.Ef;
 using FindWorker.Entity.Models;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -16,11 +18,13 @@ namespace FindWorker.Api.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
+        private readonly IHostingEnvironment _environment;
         private IUnitOfWork uow;
 
-        public UserController()
+        public UserController(IHostingEnvironment environment)
         {
             uow = new EfUnitOfWork(new FindWorkersTezContext());
+            _environment = environment;
         }
 
         [HttpGet]
@@ -60,11 +64,13 @@ namespace FindWorker.Api.Controllers
                 uow.Users.Post(entity);
                 uow.SaveChanges();
                 return Ok(rol);
+               
             }
             catch
             {
                 return BadRequest("Bilinmeyen bir hata meydana geldi.");
             }
+           
 
         }*/
         /* [HttpPost("")]
@@ -159,6 +165,32 @@ namespace FindWorker.Api.Controllers
             {
                 return BadRequest(ex.Message);
             }
+        }
+
+        [HttpPost("Photo")]
+        public async Task<IActionResult> UpdatePhoto(User entity)
+        {
+            
+
+                
+               
+
+                if (entity.Photo.Length > 0)
+                {
+                    using (var fileStream = new FileStream(Path.Combine(entity.ProfilePhoto, entity.Photo.FileName), FileMode.Create))
+                    {
+                        await entity.Photo.CopyToAsync(fileStream);
+                    }
+                }
+                var photo = Path.Combine(_environment.WebRootPath, "Photo");
+                entity.ProfilePhoto = photo;
+                uow.Users.Post(entity);
+                uow.SaveChanges();
+
+            
+            return Ok();
+            
+            
         }
     }
 }

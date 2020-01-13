@@ -106,6 +106,10 @@
       "frameworks": {
         "netcoreapp3.0": {
           "dependencies": {
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[3.0.0, )"

@@ -127,5 +127,60 @@ namespace FindWorker.Api.Controllers
            return RedirectToAction("CompanyList");
        }*/
 
+        [HttpGet("GetCV")]
+        public IActionResult GetCV()
+        {
+
+            CvList cvList1 = new CvList();
+            
+
+            try
+            {
+
+                ////cv.Contact = uow.Contacts.GetAll().ToList();
+                //cv.CvData = uow.CvDatas.GetAll().ToList();
+                ////cv.Document = uow.Documents.GetAll().ToList();
+                //cv.Education = uow.Educations.GetAll().ToList();
+                ////cv.Hobby = uow.Hobbies.GetAll().ToList();
+                ////cv.Language = uow.Languages.GetAll().ToList();
+                ////cv.Location = uow.Locations.GetAll().ToList();
+                ////cv.Project = uow.Projects.GetAll().ToList();
+                ////cv.Reference = uow.References.GetAll().ToList();
+                //cv.Skill = uow.Skills.GetAll().ToList();
+                ////cv.WorkExperience = uow.WorkExperiences.ToList();
+                List<Cvdata> cvList = uow.CvDatas.GetAll().ToList();
+
+                List<CvViewList> cvViewLists = new List<CvViewList>();
+                foreach (var item in cvList)
+                {
+                    string skillName = "",departmentName="";
+                    List<Skill> skillsList = uow.Skills.Find(i => i.UserId == item.UserId).ToList();
+                    foreach (var itemSkill in skillsList)
+                    {
+                        skillName += itemSkill.SkillName;
+                    }
+                    List<Education> educationList = uow.Educations.Find(i => i.UserId == item.UserId).ToList();
+                    foreach (var itemEducation in educationList)
+                    {
+                        departmentName += itemEducation.Department;
+                    }
+                    CvViewList cvView = new CvViewList();
+                    cvView.CvName = item.CvName;
+                    cvView.Department = departmentName;
+                    cvView.Skills = skillName;
+                    cvViewLists.Add(cvView);
+                }
+                cvList1.cvViewLists = cvViewLists;
+                return Ok(cvList1);
+
+            }
+
+
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
     }
 }
