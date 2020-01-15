@@ -37,14 +37,14 @@ namespace FindWorker.Api.Controllers
             return BadRequest("Error");
         }
 
-        [HttpPost]
+        [HttpPost("AddCvName")]
        public IActionResult AddCv(Cvdata entity)
         {
             try
             {
                 uow.CvDatas.Post(entity);
                 uow.SaveChanges();
-                return Ok("ok");
+                return Ok();
             }
             catch (Exception ex)
             {
@@ -58,7 +58,7 @@ namespace FindWorker.Api.Controllers
         {
             uow.CvDatas.Put(entity);
             uow.SaveChanges();
-            return Ok("ok");
+            return Ok();
         }
 
         [HttpGet("Delete")]

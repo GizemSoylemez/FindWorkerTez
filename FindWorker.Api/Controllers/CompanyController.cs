@@ -150,7 +150,8 @@ namespace FindWorker.Api.Controllers
                 ////cv.WorkExperience = uow.WorkExperiences.ToList();
                 List<Cvdata> cvList = uow.CvDatas.GetAll().ToList();
 
-                List<CvViewList> cvViewLists = new List<CvViewList>();
+                CvList cvViewLists = new CvList();
+                List<CvViewList> lst = new List<CvViewList>();
                 foreach (var item in cvList)
                 {
                     string skillName = "",departmentName="";
@@ -168,10 +169,11 @@ namespace FindWorker.Api.Controllers
                     cvView.CvName = item.CvName;
                     cvView.Department = departmentName;
                     cvView.Skills = skillName;
-                    cvViewLists.Add(cvView);
+                    lst.Add(cvView);
                 }
-                cvList1.cvViewLists = cvViewLists;
-                return Ok(cvList1);
+
+                cvViewLists.cvViewLists = lst;
+                return Ok(cvViewLists);
 
             }
 

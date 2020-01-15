@@ -18,13 +18,12 @@ namespace FindWorker.Api.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
-        private readonly IHostingEnvironment _environment;
-        private IUnitOfWork uow;
 
-        public UserController(IHostingEnvironment environment)
+        private IUnitOfWork uow;
+        public UserController()
         {
             uow = new EfUnitOfWork(new FindWorkersTezContext());
-            _environment = environment;
+
         }
 
         [HttpGet]
@@ -52,7 +51,7 @@ namespace FindWorker.Api.Controllers
             return Ok(uow.Users.Find(x => x.Email == email).FirstOrDefault());
         }
 
-       
+
         /*[HttpPost]
         public IActionResult AddUser(User entity)
         {
@@ -138,7 +137,7 @@ namespace FindWorker.Api.Controllers
         public IActionResult GetUserInfo()
         {
             var email = User.Claims.FirstOrDefault().Value;
-            var usr = uow.Users.Find(i=>i.Email==email).FirstOrDefault();
+            var usr = uow.Users.Find(i => i.Email == email).FirstOrDefault();
             Cv cv = new Cv();
 
             User user = new User();
@@ -168,29 +167,31 @@ namespace FindWorker.Api.Controllers
         }
 
         [HttpPost("Photo")]
-        public async Task<IActionResult> UpdatePhoto(User entity)
+        public async Task<IActionResult> UpdatePhoto([FromForm]User entity, IFormFile file)
         {
-            
+           
+            if (file != null)
+            {
+                var path = Path.Combine(Directory.GetCurrentDirectory(), "node_modules\\images", file.FileName);
 
-                
-               
-
-                if (entity.Photo.Length > 0)
+                using (var stream = new FileStream(path, FileMode.Create))
                 {
-                    using (var fileStream = new FileStream(Path.Combine(entity.ProfilePhoto, entity.Photo.FileName), FileMode.Create))
-                    {
-                        await entity.Photo.CopyToAsync(fileStream);
-                    }
+                    await file.CopyToAsync(stream);
+
+                    entity.ProfilePhoto = file.FileName;
                 }
-                var photo = Path.Combine(_environment.WebRootPath, "Photo");
-                entity.ProfilePhoto = photo;
+
                 uow.Users.Post(entity);
                 uow.SaveChanges();
+              
 
-            
+         
+
+
+            }
             return Ok();
-            
-            
+
         }
     }
 }
+

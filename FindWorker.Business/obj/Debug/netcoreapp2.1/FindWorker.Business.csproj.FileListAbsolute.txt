@@ -38,11 +38,3 @@ C:\Users\gizem\Desktop\tezcode\FindWorkerTez\FindWorker.Business\obj\Debug\netco
 C:\Users\gizem\Desktop\tezcode\FindWorkerTez\FindWorker.Business\obj\Debug\netcoreapp2.1\FindWorker.Business.AssemblyInfo.cs
 C:\Users\gizem\Desktop\tezcode\FindWorkerTez\FindWorker.Business\obj\Debug\netcoreapp2.1\FindWorker.Business.dll
 C:\Users\gizem\Desktop\tezcode\FindWorkerTez\FindWorker.Business\obj\Debug\netcoreapp2.1\FindWorker.Business.pdb
-C:\Users\gizem\Desktop\Api\FindWorkerTez\FindWorker.Business\bin\Debug\netcoreapp2.1\FindWorker.Business.deps.json
-C:\Users\gizem\Desktop\Api\FindWorkerTez\FindWorker.Business\bin\Debug\netcoreapp2.1\FindWorker.Business.dll
-C:\Users\gizem\Desktop\Api\FindWorkerTez\FindWorker.Business\bin\Debug\netcoreapp2.1\FindWorker.Business.pdb
-C:\Users\gizem\Desktop\Api\FindWorkerTez\FindWorker.Business\obj\Debug\netcoreapp2.1\FindWorker.Business.csprojAssemblyReference.cache
-C:\Users\gizem\Desktop\Api\FindWorkerTez\FindWorker.Business\obj\Debug\netcoreapp2.1\FindWorker.Business.AssemblyInfoInputs.cache
-C:\Users\gizem\Desktop\Api\FindWorkerTez\FindWorker.Business\obj\Debug\netcoreapp2.1\FindWorker.Business.AssemblyInfo.cs
-C:\Users\gizem\Desktop\Api\FindWorkerTez\FindWorker.Business\obj\Debug\netcoreapp2.1\FindWorker.Business.dll
-C:\Users\gizem\Desktop\Api\FindWorkerTez\FindWorker.Business\obj\Debug\netcoreapp2.1\FindWorker.Business.pdb

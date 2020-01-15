@@ -535,9 +535,6 @@ C:\Users\Alican\Desktop\Api\FindWorkerTez\FindWorker.Api\obj\Debug\netcoreapp3.0
 C:\Users\Alican\Desktop\Api\FindWorkerTez\FindWorker.Api\obj\Debug\netcoreapp3.0\FindWorker.Api.csproj.CopyComplete
 C:\Users\Alican\Desktop\Api\FindWorkerTez\FindWorker.Api\obj\Debug\netcoreapp3.0\FindWorker.Api.dll
 C:\Users\Alican\Desktop\Api\FindWorkerTez\FindWorker.Api\obj\Debug\netcoreapp3.0\FindWorker.Api.pdb
-C:\Users\gizem\Desktop\Api\FindWorkerTez\FindWorker.Api\obj\Debug\netcoreapp3.0\FindWorker.Api.csprojAssemblyReference.cache
-C:\Users\gizem\Desktop\Api\FindWorkerTez\FindWorker.Api\obj\Debug\netcoreapp3.0\FindWorker.Api.dll
-C:\Users\gizem\Desktop\Api\FindWorkerTez\FindWorker.Api\obj\Debug\netcoreapp3.0\FindWorker.Api.pdb
 C:\Users\gizem\Desktop\Api\FindWorkerTez\FindWorker.Api\bin\Debug\netcoreapp3.0\appsettings.Development.json
 C:\Users\gizem\Desktop\Api\FindWorkerTez\FindWorker.Api\bin\Debug\netcoreapp3.0\appsettings.json
 C:\Users\gizem\Desktop\Api\FindWorkerTez\FindWorker.Api\bin\Debug\netcoreapp3.0\Properties\launchSettings.json
@@ -550,6 +547,7 @@ C:\Users\gizem\Desktop\Api\FindWorkerTez\FindWorker.Api\bin\Debug\netcoreapp3.0\
 C:\Users\gizem\Desktop\Api\FindWorkerTez\FindWorker.Api\bin\Debug\netcoreapp3.0\Autofac.dll
 C:\Users\gizem\Desktop\Api\FindWorkerTez\FindWorker.Api\bin\Debug\netcoreapp3.0\Autofac.Extensions.DependencyInjection.dll
 C:\Users\gizem\Desktop\Api\FindWorkerTez\FindWorker.Api\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\gizem\Desktop\Api\FindWorkerTez\FindWorker.Api\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Http.Features.dll
 C:\Users\gizem\Desktop\Api\FindWorkerTez\FindWorker.Api\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Razor.Language.dll
 C:\Users\gizem\Desktop\Api\FindWorkerTez\FindWorker.Api\bin\Debug\netcoreapp3.0\Microsoft.CodeAnalysis.dll
 C:\Users\gizem\Desktop\Api\FindWorkerTez\FindWorker.Api\bin\Debug\netcoreapp3.0\Microsoft.CodeAnalysis.CSharp.dll
@@ -562,6 +560,7 @@ C:\Users\gizem\Desktop\Api\FindWorkerTez\FindWorker.Api\bin\Debug\netcoreapp3.0\
 C:\Users\gizem\Desktop\Api\FindWorkerTez\FindWorker.Api\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\gizem\Desktop\Api\FindWorkerTez\FindWorker.Api\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\gizem\Desktop\Api\FindWorkerTez\FindWorker.Api\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\gizem\Desktop\Api\FindWorkerTez\FindWorker.Api\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Primitives.dll
 C:\Users\gizem\Desktop\Api\FindWorkerTez\FindWorker.Api\bin\Debug\netcoreapp3.0\Microsoft.Identity.Client.dll
 C:\Users\gizem\Desktop\Api\FindWorkerTez\FindWorker.Api\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.JsonWebTokens.dll
 C:\Users\gizem\Desktop\Api\FindWorkerTez\FindWorker.Api\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Logging.dll
@@ -585,7 +584,9 @@ C:\Users\gizem\Desktop\Api\FindWorkerTez\FindWorker.Api\bin\Debug\netcoreapp3.0\
 C:\Users\gizem\Desktop\Api\FindWorkerTez\FindWorker.Api\bin\Debug\netcoreapp3.0\System.Composition.TypedParts.dll
 C:\Users\gizem\Desktop\Api\FindWorkerTez\FindWorker.Api\bin\Debug\netcoreapp3.0\System.Configuration.ConfigurationManager.dll
 C:\Users\gizem\Desktop\Api\FindWorkerTez\FindWorker.Api\bin\Debug\netcoreapp3.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\gizem\Desktop\Api\FindWorkerTez\FindWorker.Api\bin\Debug\netcoreapp3.0\System.IO.Pipelines.dll
 C:\Users\gizem\Desktop\Api\FindWorkerTez\FindWorker.Api\bin\Debug\netcoreapp3.0\System.Runtime.Caching.dll
+C:\Users\gizem\Desktop\Api\FindWorkerTez\FindWorker.Api\bin\Debug\netcoreapp3.0\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\gizem\Desktop\Api\FindWorkerTez\FindWorker.Api\bin\Debug\netcoreapp3.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\gizem\Desktop\Api\FindWorkerTez\FindWorker.Api\bin\Debug\netcoreapp3.0\cs\Microsoft.CodeAnalysis.resources.dll
 C:\Users\gizem\Desktop\Api\FindWorkerTez\FindWorker.Api\bin\Debug\netcoreapp3.0\de\Microsoft.CodeAnalysis.resources.dll
@@ -651,6 +652,7 @@ C:\Users\gizem\Desktop\Api\FindWorkerTez\FindWorker.Api\bin\Debug\netcoreapp3.0\
 C:\Users\gizem\Desktop\Api\FindWorkerTez\FindWorker.Api\bin\Debug\netcoreapp3.0\FindWorker.Entity.dll
 C:\Users\gizem\Desktop\Api\FindWorkerTez\FindWorker.Api\bin\Debug\netcoreapp3.0\FindWorker.Data.pdb
 C:\Users\gizem\Desktop\Api\FindWorkerTez\FindWorker.Api\bin\Debug\netcoreapp3.0\FindWorker.Entity.pdb
+C:\Users\gizem\Desktop\Api\FindWorkerTez\FindWorker.Api\obj\Debug\netcoreapp3.0\FindWorker.Api.csprojAssemblyReference.cache
 C:\Users\gizem\Desktop\Api\FindWorkerTez\FindWorker.Api\obj\Debug\netcoreapp3.0\staticwebassets\FindWorker.Api.StaticWebAssets.Manifest.cache
 C:\Users\gizem\Desktop\Api\FindWorkerTez\FindWorker.Api\obj\Debug\netcoreapp3.0\staticwebassets\FindWorker.Api.StaticWebAssets.xml
 C:\Users\gizem\Desktop\Api\FindWorkerTez\FindWorker.Api\obj\Debug\netcoreapp3.0\FindWorker.Api.MvcApplicationPartsAssemblyInfo.cache
@@ -658,7 +660,5 @@ C:\Users\gizem\Desktop\Api\FindWorkerTez\FindWorker.Api\obj\Debug\netcoreapp3.0\
 C:\Users\gizem\Desktop\Api\FindWorkerTez\FindWorker.Api\obj\Debug\netcoreapp3.0\FindWorker.Api.AssemblyInfo.cs
 C:\Users\gizem\Desktop\Api\FindWorkerTez\FindWorker.Api\obj\Debug\netcoreapp3.0\FindWorker.Api.RazorTargetAssemblyInfo.cache
 C:\Users\gizem\Desktop\Api\FindWorkerTez\FindWorker.Api\obj\Debug\netcoreapp3.0\FindWorker.Api.csproj.CopyComplete
-C:\Users\gizem\Desktop\Api\FindWorkerTez\FindWorker.Api\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Http.Features.dll
-C:\Users\gizem\Desktop\Api\FindWorkerTez\FindWorker.Api\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Primitives.dll
-C:\Users\gizem\Desktop\Api\FindWorkerTez\FindWorker.Api\bin\Debug\netcoreapp3.0\System.IO.Pipelines.dll
-C:\Users\gizem\Desktop\Api\FindWorkerTez\FindWorker.Api\bin\Debug\netcoreapp3.0\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\gizem\Desktop\Api\FindWorkerTez\FindWorker.Api\obj\Debug\netcoreapp3.0\FindWorker.Api.dll
+C:\Users\gizem\Desktop\Api\FindWorkerTez\FindWorker.Api\obj\Debug\netcoreapp3.0\FindWorker.Api.pdb
