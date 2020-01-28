@@ -45,12 +45,17 @@ namespace FindWorker.Api.Controllers
             return Ok("ok");
         }
 
-        [HttpPut]
-        public IActionResult UpdateRefernece([FromBody] Reference entity)
+        [HttpPost("UpdateReference")]
+        public IActionResult UpdateReference([FromBody] Reference entity)
         {
-            uow.References.Put(entity);
+            var result = uow.References.Get(Convert.ToInt32(entity.Id));
+            result.ReferenceName = entity.ReferenceName;
+            result.ReferencePosition = entity.ReferencePosition;
+            result.ReferenceEmail = entity.ReferenceName;
+            result.ReferencePhone = entity.ReferencePhone;
+            uow.References.Put(result);
             uow.SaveChanges();
-            return Ok("ok");
+            return Ok();
         }
 
         [HttpGet("delete")]

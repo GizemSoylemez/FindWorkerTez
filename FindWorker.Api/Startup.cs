@@ -41,7 +41,6 @@ namespace Test
 
             services.AddDbContext<FindWorkersTezContext>(Options => Options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddTransient<IUserRepository, EfUserRepository>();
-            services.AddTransient<IAdvertRepository, EfAdvertRepository>();
             services.AddTransient<ICompanyRepository, EfCompanyRepository>();
             services.AddTransient<IContactRepository, EfContactRepository>();
             services.AddTransient<ICvDataRepository, EfCvdataRepository>();
@@ -50,7 +49,6 @@ namespace Test
             services.AddTransient<IHobbyRepository, EfHobbyRepository>();
             services.AddTransient<ILanguageRepository, EfLanguageRepository>();
             services.AddTransient<ILocationRepository, EfLocationRepository>();
-            services.AddTransient<IMessageRepository, EfMessageRepository>();
             services.AddTransient<IProjectRepository, EfProjectRepository>();
             services.AddTransient<IReferenceRepository, EfReferenceRepository>();
             services.AddTransient<IRoleRepository, EfRoleRepository>();

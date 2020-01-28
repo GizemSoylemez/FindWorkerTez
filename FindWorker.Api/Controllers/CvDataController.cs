@@ -53,10 +53,12 @@ namespace FindWorker.Api.Controllers
             
         }
 
-        [HttpPut]
+        [HttpPost("UpdateCv")]
         public IActionResult UpdateCv(Cvdata entity)
         {
-            uow.CvDatas.Put(entity);
+            var result = uow.CvDatas.Get(Convert.ToInt32(entity.Id));
+            result.CvName = entity.CvName;
+            uow.CvDatas.Put(result);
             uow.SaveChanges();
             return Ok();
         }

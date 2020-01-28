@@ -55,18 +55,20 @@ namespace FindWorker.Api.Controllers
             }
             return BadRequest("Error");
         }
-        [HttpPut("")]
+        [HttpPost("UpdateContact")]
         public IActionResult UpdateContact([FromBody]Contact entity)
         {
-
-
             try
             {
-                var result = uow.Contacts.Find(i => i.Id == entity.Id);
-                //entity.Role = uow.Roles.Get(entity.RoleId);
-                uow.Contacts.Put(entity);
+                var result = uow.Contacts.Get(Convert.ToInt32(entity.Id));
+                // var result2 = uow.Projects.Find(i => i.UserId == entity.UserId);
+                //Project uProject = entity;
+                //uProject.Id = result.Id;
+                result.ContactName = entity.ContactName;
+                result.Decription = entity.Decription;
+                uow.Contacts.Put(result);
                 uow.SaveChanges();
-                return Ok("ok");
+                return Ok();
 
             }
             catch (Exception ex)

@@ -55,17 +55,17 @@ namespace FindWorker.Api.Controllers
             }
             return BadRequest("Error");
         }
-        [HttpPut("")]
+        [HttpPost("UpdateHobby")]
         public IActionResult UpdateHobby([FromBody]Hobby entity)
         {
 
             try
             {
-                var result = uow.Hobbies.Find(i => i.Id == entity.Id);
-                //entity.Role = uow.Roles.Get(entity.RoleId);
-                uow.Hobbies.Put(entity);
+                var result = uow.Hobbies.Get(Convert.ToInt32(entity.Id));
+                result.HobbiesName = entity.HobbiesName;
+                uow.Hobbies.Put(result);
                 uow.SaveChanges();
-                return Ok("ok");
+                return Ok();
 
             }
             catch (Exception ex)

@@ -367,3 +367,7 @@ C:\Users\gizem\Desktop\Api\FindWorkerTez\FindWorker.Api\obj\Release\netcoreapp3.
 C:\Users\gizem\Desktop\Api\FindWorkerTez\FindWorker.Api\obj\Release\netcoreapp3.0\FindWorker.Api.csproj.CopyComplete
 C:\Users\gizem\Desktop\Api\FindWorkerTez\FindWorker.Api\obj\Release\netcoreapp3.0\FindWorker.Api.dll
 C:\Users\gizem\Desktop\Api\FindWorkerTez\FindWorker.Api\obj\Release\netcoreapp3.0\FindWorker.Api.pdb
+C:\Users\gizem\Desktop\Api\FindWorkerTez\FindWorker.Api\bin\Release\netcoreapp3.0\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\gizem\Desktop\Api\FindWorkerTez\FindWorker.Api\bin\Release\netcoreapp3.0\Microsoft.Extensions.Primitives.dll
+C:\Users\gizem\Desktop\Api\FindWorkerTez\FindWorker.Api\bin\Release\netcoreapp3.0\System.IO.Pipelines.dll
+C:\Users\gizem\Desktop\Api\FindWorkerTez\FindWorker.Api\bin\Release\netcoreapp3.0\System.Runtime.CompilerServices.Unsafe.dll

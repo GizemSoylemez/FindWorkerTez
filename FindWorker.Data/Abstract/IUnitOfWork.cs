@@ -9,7 +9,6 @@ namespace FindWorker.Data.Abstract
     {
         ICompanyRepository Companies { get; }
         IUserRepository Users { get; }
-        IAdvertRepository Adverts { get; }
         IContactRepository Contacts { get; }
         ICvDataRepository CvDatas { get; }
         IDocumentRepository Documents { get; }
@@ -17,7 +16,6 @@ namespace FindWorker.Data.Abstract
         IHobbyRepository Hobbies { get; }
         ILanguageRepository Languages { get; }
         ILocationRepository Locations { get; }
-        IMessageRepository Messages { get; }
         IProjectRepository Projects { get; }
         IReferenceRepository References { get; }
         IRoleRepository Roles { get; }

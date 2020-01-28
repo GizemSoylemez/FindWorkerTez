@@ -55,17 +55,17 @@ namespace FindWorker.Api.Controllers
             }
             return BadRequest("Error");
         }
-        [HttpPut("")]
+        [HttpPost("UpdateSkill")]
         public IActionResult UpdateSkill([FromBody]Skill entity)
         {
-
             try
             {
-                var result = uow.Skills.Find(i => i.Id == entity.Id);
-                //entity.Role = uow.Roles.Get(entity.RoleId);
-                uow.Skills.Put(entity);
+                var result = uow.Skills.Get(Convert.ToInt32(entity.Id));
+                result.SkillName = entity.SkillName;
+                result.SkillLevel = entity.SkillLevel;
+                uow.Skills.Put(result);
                 uow.SaveChanges();
-                return Ok("ok");
+                return Ok();
 
             }
             catch (Exception ex)

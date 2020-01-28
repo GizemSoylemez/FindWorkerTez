@@ -44,12 +44,18 @@ namespace FindWorker.Api.Controllers
             return Ok("ok");
         }
 
-        [HttpPut]
+        [HttpPost("UpdateWorkExperience")]
         public IActionResult UpdateWorkExperience([FromBody] WorkExperience entity)
         {
-            uow.WorkExperiences.Put(entity);
+            var result = uow.WorkExperiences.Get(Convert.ToInt32(entity.Id));
+            result.CompanyName = entity.CompanyName;
+            result.Description = entity.Description;
+            result.Position = entity.Position;
+            result.WorkFinishTime = entity.WorkFinishTime;
+            result.WorkStartTime = entity.WorkStartTime;
+            uow.WorkExperiences.Put(result);
             uow.SaveChanges();
-            return Ok("ok");
+            return Ok();
         }
 
         [HttpGet("delete")]

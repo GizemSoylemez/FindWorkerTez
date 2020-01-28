@@ -91,19 +91,17 @@ namespace FindWorker.Api.Controllers
 
          }*/
 
-        [HttpPut("")]
+        [HttpPost("UpdateUser")]
         public IActionResult UpdateUser([FromBody]User entity)
         {
-            //var id = Request.Headers["userId"];
-
 
             try
             {
-                var result = uow.Users.Find(i => i.Id == entity.Id);
-                //entity.Role = uow.Roles.Get(entity.RoleId);
-                uow.Users.Put(entity);
+                var result = uow.Users.Get(Convert.ToInt32(entity.Id));
+                result.ProfilePhoto = entity.ProfilePhoto;
+                uow.Users.Put(result);
                 uow.SaveChanges();
-                return Ok("ok");
+                return Ok();
 
             }
             catch (Exception ex)
@@ -143,7 +141,7 @@ namespace FindWorker.Api.Controllers
             User user = new User();
             try
             {
-
+               
                 cv.Contact = uow.Contacts.Find(i => i.UserId == usr.Id).ToList();
                 cv.CvData = uow.CvDatas.Find(i => i.UserId == usr.Id).ToList();
                 cv.Document = uow.Documents.Find(i => i.UserId == usr.Id).ToList();
@@ -154,7 +152,8 @@ namespace FindWorker.Api.Controllers
                 cv.Project = uow.Projects.Find(i => i.UserId == usr.Id).ToList();
                 cv.Reference = uow.References.Find(i => i.UserId == usr.Id).ToList();
                 cv.Skill = uow.Skills.Find(i => i.UserId == usr.Id).ToList();
-                //cv.WorkExperience = uow.WorkExperiences.Find(i => i.UserId == usr.Id).ToList();
+                cv.User = uow.Users.Find(i => i.Id == usr.Id).ToList();
+              //  cv.WorkExperience = uow.WorkExperiences.Find(i => i.UserId == usr.Id).ToList();
                 return Ok(cv);
 
             }

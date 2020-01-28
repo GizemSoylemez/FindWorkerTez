@@ -54,16 +54,17 @@ namespace FindWorker.Api.Controllers
             }
             return BadRequest("Error");
         }
-        [HttpPut("")]
+        [HttpPost("UpdateLanguage")]
         public IActionResult UpdateLanguage([FromBody]Language entity)
         {
             try
             {
-                var result = uow.Languages.Find(i => i.Id == entity.Id);
-                //entity.Role = uow.Roles.Get(entity.RoleId);
-                uow.Languages.Put(entity);
+                var result = uow.Languages.Get(Convert.ToInt32(entity.Id));
+                result.LanguageName = entity.LanguageName;
+                result.LanguageLevel = entity.LanguageLevel;
+                uow.Languages.Put(result);
                 uow.SaveChanges();
-                return Ok("ok");
+                return Ok();
 
             }
             catch (Exception ex)

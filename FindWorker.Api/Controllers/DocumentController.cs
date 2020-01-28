@@ -55,16 +55,17 @@ namespace FindWorker.Api.Controllers
             }
             return BadRequest("Error");
         }
-        [HttpPut("")]
+        [HttpPost("UpdateDocument")]
         public IActionResult UpdateDocument([FromBody]Document entity)
         {
             try
             {
-                var result = uow.Documents.Find(i => i.Id == entity.Id);
-                //entity.Role = uow.Roles.Get(entity.RoleId);
-                uow.Documents.Put(entity);
+                var result = uow.Documents.Get(Convert.ToInt32(entity.Id));
+                result.DocumentationName = entity.DocumentationName;
+                result.DocumentDate = entity.DocumentDate;
+                uow.Documents.Put(result);
                 uow.SaveChanges();
-                return Ok("ok");
+                return Ok();
 
             }
             catch (Exception ex)

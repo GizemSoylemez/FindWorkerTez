@@ -15,7 +15,6 @@ namespace FindWorker.Entity.Models
         {
         }
 
-        public virtual DbSet<Advert> Advert { get; set; }
         public virtual DbSet<Company> Company { get; set; }
         public virtual DbSet<Contact> Contact { get; set; }
         public virtual DbSet<Cvdata> Cvdata { get; set; }
@@ -24,7 +23,6 @@ namespace FindWorker.Entity.Models
         public virtual DbSet<Hobby> Hobby { get; set; }
         public virtual DbSet<Language> Language { get; set; }
         public virtual DbSet<Location> Location { get; set; }
-        public virtual DbSet<Message> Message { get; set; }
         public virtual DbSet<Project> Project { get; set; }
         public virtual DbSet<Reference> Reference { get; set; }
         public virtual DbSet<Role> Role { get; set; }
@@ -42,21 +40,7 @@ namespace FindWorker.Entity.Models
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Advert>(entity =>
-            {
-                entity.Property(e => e.AdvertName).HasMaxLength(75);
-
-                entity.Property(e => e.CreationDate).HasColumnType("datetime");
-
-                entity.Property(e => e.Description).HasColumnType("text");
-
-                entity.Property(e => e.LastModifiedDate).HasColumnType("datetime");
-
-                entity.Property(e => e.Position).HasMaxLength(50);
-
-                entity.Property(e => e.SchoolType).HasMaxLength(50);
-            });
-
+            
             modelBuilder.Entity<Company>(entity =>
             {
                 entity.Property(e => e.CompanyEmail)
@@ -147,19 +131,7 @@ namespace FindWorker.Entity.Models
                 entity.Property(e => e.LastModifiedDate).HasColumnType("datetime");
             });
 
-            modelBuilder.Entity<Message>(entity =>
-            {
-                entity.Property(e => e.CreationDate).HasColumnType("datetime");
-
-                entity.Property(e => e.LastModifiedDate).HasColumnType("datetime");
-
-                entity.Property(e => e.Message1)
-                    .HasColumnName("Message")
-                    .HasColumnType("text");
-
-                entity.Property(e => e.MessageDate).HasColumnType("datetime");
-            });
-
+           
             modelBuilder.Entity<Project>(entity =>
             {
                 entity.Property(e => e.CreationDate).HasColumnType("datetime");

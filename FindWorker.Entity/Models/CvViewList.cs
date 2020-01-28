@@ -9,5 +9,6 @@ namespace FindWorker.Entity.Models
         public string CvName { get; set; }
         public string Department { get; set; }
         public string Skills { get; set; }
+        public string phoneNumber { get; set; }
     }
 }

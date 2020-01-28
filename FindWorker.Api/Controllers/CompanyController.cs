@@ -149,26 +149,35 @@ namespace FindWorker.Api.Controllers
                 //cv.Skill = uow.Skills.GetAll().ToList();
                 ////cv.WorkExperience = uow.WorkExperiences.ToList();
                 List<Cvdata> cvList = uow.CvDatas.GetAll().ToList();
-
+               
                 CvList cvViewLists = new CvList();
                 List<CvViewList> lst = new List<CvViewList>();
                 foreach (var item in cvList)
                 {
-                    string skillName = "",departmentName="";
+                    string skillName = "",departmentName="", PhoneNumber="";
                     List<Skill> skillsList = uow.Skills.Find(i => i.UserId == item.UserId).ToList();
                     foreach (var itemSkill in skillsList)
                     {
                         skillName += itemSkill.SkillName;
                     }
+
                     List<Education> educationList = uow.Educations.Find(i => i.UserId == item.UserId).ToList();
                     foreach (var itemEducation in educationList)
                     {
                         departmentName += itemEducation.Department;
                     }
+
+                    List<User> user = uow.Users.Find(i => i.Id == item.Id).ToList();
+                    foreach (var itemPhoneNumber in user)
+                    {
+                        PhoneNumber += itemPhoneNumber.PhoneNumber;
+                    }
+
                     CvViewList cvView = new CvViewList();
                     cvView.CvName = item.CvName;
                     cvView.Department = departmentName;
                     cvView.Skills = skillName;
+                    cvView.phoneNumber = PhoneNumber;
                     lst.Add(cvView);
                 }
 

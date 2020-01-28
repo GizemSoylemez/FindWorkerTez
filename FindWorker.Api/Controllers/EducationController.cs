@@ -46,14 +46,17 @@ namespace FindWorker.Api.Controllers
             return Ok("ok");
         }
 
-        [HttpPut]
+        [HttpPost("UpdateEducation")]
         public IActionResult UpdateEducation([FromBody] Education entity)
         {
-            uow.Educations.Put(entity);
+            var result = uow.Educations.Get(Convert.ToInt32(entity.Id));
+            result.SchoolName = entity.SchoolName;
+            result.GruadetDate = entity.GruadetDate;
+            result.Department = entity.Department;
+            uow.Educations.Put(result);
             uow.SaveChanges();
-            return Ok("ok");
+            return Ok();
         }
-
         [HttpGet("delete")]
         public IActionResult RemoveEducation(int id)
         {

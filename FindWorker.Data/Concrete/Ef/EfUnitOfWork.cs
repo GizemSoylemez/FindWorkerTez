@@ -17,7 +17,6 @@ namespace FindWorker.Data.Concrete.Ef
         }
 
         private ICompanyRepository _company;
-        private IAdvertRepository _advert;
         private IContactRepository _contact;
         private ICvDataRepository _cv;
         private IDocumentRepository _document;
@@ -25,7 +24,6 @@ namespace FindWorker.Data.Concrete.Ef
         private IHobbyRepository _hobby;
         private ILanguageRepository _language;
         private ILocationRepository _location;
-        private IMessageRepository _message;
         private IProjectRepository _project;
         private IReferenceRepository _reference;
         private IRoleRepository _role;
@@ -49,14 +47,7 @@ namespace FindWorker.Data.Concrete.Ef
             }
         }
 
-        public IAdvertRepository Adverts
-        {
-            get
-            {
-                return _advert ?? (_advert = new EfAdvertRepository(dbContext));
-            }
-        }
-
+       
         public IContactRepository Contacts
         {
             get
@@ -113,14 +104,7 @@ namespace FindWorker.Data.Concrete.Ef
             }
         }
 
-        public IMessageRepository Messages
-        {
-            get
-            {
-                return _message ?? (_message = new EfMessageRepository(dbContext));
-            }
-        }
-
+       
         public IProjectRepository Projects
         {
             get

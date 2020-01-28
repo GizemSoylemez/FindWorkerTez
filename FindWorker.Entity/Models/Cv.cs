@@ -6,7 +6,7 @@ namespace FindWorker.Entity.Models
 {
     public class Cv
     {
-
+        public List<User> User { get; set; }
         public List<Education> Education { get; set; }
         public List<Project> Project { get; set; }
         public List<Skill> Skill { get; set; }
